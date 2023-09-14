@@ -1,4 +1,4 @@
-export default function helloWorld(request) {
+export default function main(request) {
   const { pathParams, queryParams, site } = request
 
   return {
