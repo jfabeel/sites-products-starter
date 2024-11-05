@@ -8,7 +8,7 @@ export async function main(request) {
   }
 
   return {
-    body: "New Hello World!",
+    body: "New!",
     headers: null,
     statusCode: 200
   }
