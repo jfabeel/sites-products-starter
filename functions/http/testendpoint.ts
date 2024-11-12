@@ -1,6 +1,8 @@
 export async function main(request) {
   const { pathParams, queryParams, site } = request
 
+  console.log(request);
+
   if (queryParams.length > 0) {
     return {
       body: queryParams[0],
@@ -8,8 +10,10 @@ export async function main(request) {
   }
 
   return {
-    body: "New!",
-    headers: null,
-    statusCode: 200
+    body: null,
+    headers: {
+      "Location" : "www.yext.com",
+    },
+    statusCode: 301
   }
 }
